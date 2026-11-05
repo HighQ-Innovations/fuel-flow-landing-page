@@ -1,20 +1,24 @@
 import {
   Bell,
   Briefcase,
-  Building2,
-  ClipboardList,
-  FileSpreadsheet,
   Fuel,
   Gauge,
-  LifeBuoy,
+  HelpCircle,
+  Layers,
   Smartphone,
-  ShieldCheck,
+  SlidersHorizontal,
+  Table2,
   Truck,
   Wallet,
 } from "lucide-react";
 
-// Change this when the app is hosted at its final address
+// Set these in .env. Fallbacks keep the build working before they are filled in.
+export const SITE_URL =
+  import.meta.env.VITE_SITE_URL || "https://www.yourdomain.com";
+export const CONTACT_EMAIL =
+  import.meta.env.VITE_CONTACT_EMAIL || "hello@yourdomain.com";
 export const SIGN_IN_URL = "/login";
+export const DEMO_MAILTO = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent("Fuel Flow demo request")}`;
 
 export const NAV_LINKS = [
   { label: "Features", href: "#features" },
@@ -22,105 +26,125 @@ export const NAV_LINKS = [
   { label: "Roles", href: "#roles" },
 ];
 
+export const AUDIENCES = [
+  "Station owners",
+  "Station managers",
+  "Head office finance",
+];
+
 export const FEATURES = [
   {
-    icon: ClipboardList,
-    title: "Daily tank records",
-    text: "Log opening stock, deliveries received and closing stock for every product. Tank sales are worked out for you.",
+    icon: Layers,
+    title: "Tank records",
+    text: "Track opening stock, deliveries and closing levels for each tank.",
   },
   {
     icon: Gauge,
     title: "Pump meter readings",
-    text: "Capture each pump's readings and rate per litre, then export a clean meter report as a PDF.",
+    text: "Record opening and closing meters to account for every litre sold.",
   },
   {
     icon: Wallet,
     title: "Daily accounts",
-    text: "Record POS, cash, bank transfers, expenses and IOUs, and see the day's grand total without a calculator.",
+    text: "Bring sales, payments and expenses into one daily account.",
   },
   {
-    icon: FileSpreadsheet,
-    title: "Summaries and Excel export",
-    text: "Filter by date range and export a formatted Excel file with totals at the bottom of every column.",
+    icon: Table2,
+    title: "Summaries & Excel export",
+    text: "Review daily totals and export clear records for your finance team.",
   },
   {
     icon: Truck,
-    title: "Outdoor and van sales",
-    text: "Track outdoor sales, customer payments, outstanding balances and van stock movements in one place.",
+    title: "Outdoor & van sales",
+    text: "Keep deliveries, collections and outstanding balances in view.",
   },
   {
     icon: Bell,
-    title: "Notifications and templates",
-    text: "Send email notifications to your team, using reusable message templates for routine updates.",
+    title: "Notifications",
+    text: "Keep up with record updates that need your team's attention.",
   },
   {
-    icon: LifeBuoy,
+    icon: HelpCircle,
     title: "Help center",
-    text: "Staff can raise issues from inside the app, and admins track each request until it is resolved.",
+    text: "Find practical guidance when your team needs a hand.",
   },
   {
     icon: Smartphone,
-    title: "Works on any device",
-    text: "Use it on desktop or phone, install it to your home screen, and keep a fallback page if the connection drops.",
+    title: "Device support",
+    text: "Work with your station records from a phone, tablet or computer.",
+  },
+];
+
+export const SUMMARY_POINTS = [
+  "Review litres and sales by product.",
+  "Keep each day's records grouped together.",
+  "See daily totals without rebuilding the sheet.",
+  "Export to Excel for checks and reporting.",
+];
+
+export const OUTDOOR_POINTS = [
+  "Record fuel sold on outdoor and van runs.",
+  "Keep customer and delivery details together.",
+  "Track collections against each sale.",
+  "See what is paid and what is still outstanding.",
+];
+
+export const ROLES = [
+  {
+    icon: SlidersHorizontal,
+    title: "Administrators",
+    text: "Organise your stations, people and records with a shared view of the business.",
+    label: "Oversee the operation",
+  },
+  {
+    icon: Fuel,
+    title: "Station staff",
+    text: "Enter tank levels, pump readings and daily accounts as the day unfolds.",
+    label: "Capture the working day",
+  },
+  {
+    icon: Truck,
+    title: "Outdoor & van sales",
+    text: "Record sales away from the station and keep customer balances in sight.",
+    label: "Follow each delivery",
+  },
+  {
+    icon: Briefcase,
+    title: "HR & finance",
+    text: "Review team records and daily accounts, then export summaries for follow-up.",
+    label: "Review the details",
   },
 ];
 
 export const STEPS = [
   {
-    number: "01",
-    title: "Record the tanks",
-    text: "Enter opening, received and closing stock for each product at the start or end of the day.",
+    title: "Record tanks",
+    text: "Log opening levels, deliveries and closing stock.",
   },
   {
-    number: "02",
-    title: "Read the pumps",
-    text: "Add each pump's meter readings and the rate per litre. Totals are calculated automatically.",
+    title: "Read pumps",
+    text: "Enter meter readings and record litres sold.",
   },
   {
-    number: "03",
     title: "Close the day",
-    text: "Enter POS, cash, transfers, expenses and IOUs. The app brings it all together into the day's grand total.",
+    text: "Bring sales, collections and expenses together.",
   },
   {
-    number: "04",
-    title: "Review and export",
-    text: "Pick a date range, check the summary, and export to Excel or PDF for management and records.",
+    title: "Review & export",
+    text: "Check the summary and export your daily records.",
   },
 ];
 
-export const ROLES = [
-  {
-    icon: ShieldCheck,
-    title: "Administrators",
-    text: "Set up stations, users and products. Review pump records, daily records and accounts across every station.",
-  },
-  {
-    icon: Fuel,
-    title: "Station staff",
-    text: "Record tanks, meter readings and accounts for the day, and view or export the summary for their station.",
-  },
-  {
-    icon: Briefcase,
-    title: "Outdoor and van sales",
-    text: "Manage outdoor customers, sales, payments and van operations, with balances always up to date.",
-  },
-  {
-    icon: Building2,
-    title: "HR and finance",
-    text: "Review finance records, tank records and product summaries for AGO and PMS to keep the books accurate.",
-  },
-];
-
-export const SUMMARY_HIGHLIGHTS = [
-  "Pick any start and end date to filter the summary.",
-  "See each product's totals, and a combined total for the period.",
-  "Account figures are merged per day, so nothing is repeated or double-counted.",
-  "Clean grey headers and bordered cells, ready to print or share.",
-];
-
-export const VAN_HIGHLIGHTS = [
-  "Keep a running balance for every van.",
-  "Check a customer's history and outstanding amount before a sale.",
-  "Record outdoor payments against the right customer and sale.",
-  "Give general managers a clear view of outdoor performance.",
-];
+export const SUMMARY_TABLE = {
+  title: "Station_summary_04_Nov.xlsx",
+  subtitle: "Daily sales · All products",
+  date: "04 Nov 2026",
+  note: "Daily sales summary",
+  columns: ["Product", "Litres", "Rate (₦)", "Sales (₦)"],
+  rows: [
+    ["PMS", "2,400", "1,000", "2,400,000"],
+    ["AGO", "600", "1,200", "720,000"],
+    ["DPK", "200", "1,100", "220,000"],
+  ],
+  total: ["TOTAL", "3,200", "–", "3,340,000"],
+};
