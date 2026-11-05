@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 240" role="img" aria-labelledby="vanTitle">
+  <title id="vanTitle">Illustration of a green delivery van for outdoor fuel sales</title>
+  <ellipse cx="220" cy="214" rx="184" ry="14" fill="#163f32" opacity="0.12"/>
+  <path d="M60 70 L 300 70 Q 312 70 312 82 L 312 178 L 60 178 Q 48 178 48 166 L 48 82 Q 48 70 60 70 Z" fill="#163f32"/>
+  <path d="M312 104 L 362 104 Q 382 104 392 124 L 410 160 Q 414 170 404 176 L 312 178 Z" fill="#1f5442"/>
+  <path d="M322 116 L 358 116 Q 370 116 376 128 L 386 146 L 322 146 Z" fill="#e4eee2"/>
+  <rect x="74" y="92" width="150" height="62" rx="8" fill="#e4eee2" opacity="0.92"/>
+  <rect x="74" y="92" width="150" height="10" rx="5" fill="#b6da7f"/>
+  <text x="149" y="140" text-anchor="middle" font-family="Figtree, Arial, sans-serif" font-size="18" font-weight="800" fill="#163f32">FUEL FLOW</text>
+  <path d="M250 130 C 258 146, 272 152, 272 166 C 272 176, 264 182, 258 182 C 252 182, 244 176, 244 166 C 244 152, 256 146, 250 130 Z" fill="#e8781e"/>
+  <circle cx="122" cy="186" r="26" fill="#0f2c21"/>
+  <circle cx="122" cy="186" r="11" fill="#c8d6cb"/>
+  <circle cx="356" cy="186" r="26" fill="#0f2c21"/>
+  <circle cx="356" cy="186" r="11" fill="#c8d6cb"/>
+  <rect x="402" y="150" width="14" height="10" rx="4" fill="#ffd27a"/>
+</svg>

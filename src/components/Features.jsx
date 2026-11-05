@@ -2,42 +2,37 @@ import { FEATURES } from "../data/content";
 
 export default function Features() {
   return (
-    <section id="features" className="bg-white py-20 md:py-28">
+    <section id="features" aria-labelledby="features-title" className="bg-white py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-5">
-        <div className="mx-auto max-w-2xl text-center">
-          <p className="text-sm font-bold uppercase tracking-wider text-brand-dark">
-            Features
-          </p>
-          <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-ink md:text-4xl">
-            Everything the station needs, in one app
-          </h2>
-          <p className="mt-4 text-lg text-ink/65">
-            From the first tank reading to the final export, Fuel Flow keeps
-            each step recorded and easy to check.
+        <div className="grid items-end gap-6 md:grid-cols-2">
+          <div>
+            <p className="text-xs font-bold uppercase tracking-[0.18em] text-forest">Built around your working day</p>
+            <h2 id="features-title" className="mt-4 text-3xl font-extrabold tracking-tight text-ink md:text-5xl">
+              The whole day, in one place.
+            </h2>
+          </div>
+          <p className="max-w-md text-lg leading-relaxed text-body md:justify-self-end">
+            From the first tank check to the final account, give every record a place to belong.
           </p>
         </div>
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <ul className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {FEATURES.map((feature) => {
             const Icon = feature.icon;
             return (
-              <article
+              <li
                 key={feature.title}
-                className="group rounded-2xl border border-gray-200 bg-white p-6 transition hover:-translate-y-1 hover:border-brand hover:shadow-lg"
+                className="rounded-2xl border border-sage-line bg-white p-6 transition hover:-translate-y-0.5 hover:shadow-md"
               >
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-50 text-brand-deep transition group-hover:bg-brand group-hover:text-white">
-                  <Icon size={24} />
+                <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-sage text-forest">
+                  <Icon size={22} aria-hidden="true" />
                 </div>
-                <h3 className="mt-5 text-lg font-bold text-ink">
-                  {feature.title}
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-ink/65">
-                  {feature.text}
-                </p>
-              </article>
+                <h3 className="mt-6 text-lg font-bold text-ink">{feature.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-body">{feature.text}</p>
+              </li>
             );
           })}
-        </div>
+        </ul>
       </div>
     </section>
   );

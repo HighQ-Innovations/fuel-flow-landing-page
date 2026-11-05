@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 280" role="img" aria-labelledby="pumpTitle">
+  <title id="pumpTitle">Illustration of a fuel pump</title>
+  <ellipse cx="120" cy="262" rx="92" ry="12" fill="#163f32" opacity="0.12"/>
+  <rect x="40" y="40" width="130" height="220" rx="16" fill="#e4eee2" stroke="#163f32" stroke-width="3"/>
+  <rect x="40" y="40" width="130" height="36" rx="16" fill="#163f32"/>
+  <rect x="58" y="92" width="94" height="58" rx="8" fill="#ffffff" stroke="#163f32" stroke-width="2.5"/>
+  <text x="105" y="128" text-anchor="middle" font-family="Figtree, Arial, sans-serif" font-size="22" font-weight="800" fill="#163f32">2,400</text>
+  <rect x="58" y="166" width="94" height="10" rx="5" fill="#b6da7f"/>
+  <rect x="58" y="184" width="60" height="10" rx="5" fill="#163f32" opacity="0.35"/>
+  <rect x="58" y="212" width="94" height="32" rx="8" fill="#163f32"/>
+  <circle cx="105" cy="228" r="7" fill="#e8781e"/>
+  <path d="M170 110 C 205 110, 190 170, 214 186 C 226 194, 220 212, 206 214" fill="none" stroke="#163f32" stroke-width="8" stroke-linecap="round"/>
+  <rect x="196" y="204" width="28" height="22" rx="7" fill="#e8781e"/>
+  <path d="M182 60 C 186 74, 196 80, 196 94 C 196 104, 188 110, 182 110 C 176 110, 168 104, 168 94 C 168 80, 178 74, 182 60 Z" fill="#e8781e"/>
+</svg>
