@@ -10,7 +10,10 @@ const TRUST_POINTS = [
 
 export default function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden bg-brand-50 pt-28 pb-20 md:pt-36">
+    <section
+      id="top"
+      className="relative overflow-hidden bg-brand-50 pt-28 pb-20 md:pt-36"
+    >
       <div className="pointer-events-none absolute -right-32 -top-32 h-96 w-96 rounded-full bg-brand-100/60 blur-3xl" />
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 md:grid-cols-2">
         <div>
@@ -18,11 +21,13 @@ export default function Hero() {
             Daily records for filling stations
           </span>
           <h1 className="mt-6 text-4xl font-extrabold leading-tight tracking-tight text-ink md:text-5xl">
-            Know every litre, every naira, <span className="text-brand-deep">every day.</span>
+            Know every litre, every naira,{" "}
+            <span className="text-brand-deep">every day.</span>
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink/70">
-            Fuel Flow replaces paper logbooks. Record tanks, pump readings and daily cash in one
-            place, then see clean summaries and export them to Excel in a click.
+            Fuel Flow replaces paper logbooks. Record tanks, pump readings and
+            daily cash in one place, then see clean summaries and export them to
+            Excel in a click.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -43,7 +48,10 @@ export default function Hero() {
 
           <ul className="mt-8 space-y-2">
             {TRUST_POINTS.map((point) => (
-              <li key={point} className="flex items-center gap-2 text-sm font-medium text-ink/75">
+              <li
+                key={point}
+                className="flex items-center gap-2 text-sm font-medium text-ink/75"
+              >
                 <CheckCircle2 size={18} className="text-brand-dark" />
                 {point}
               </li>

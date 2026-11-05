@@ -12,8 +12,8 @@ export default function CallToAction() {
             Ready to close your books on time?
           </h2>
           <p className="relative mx-auto mt-4 max-w-xl text-lg text-white/85">
-            Sign in to start recording tanks, pumps and daily accounts, or ask your administrator to
-            set up your station.
+            Sign in to start recording tanks, pumps and daily accounts, or ask
+            your administrator to set up your station.
           </p>
           <a
             href={SIGN_IN_URL}

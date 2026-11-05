@@ -11,16 +11,25 @@ export default function Footer() {
 
         <nav className="flex flex-wrap justify-center gap-6">
           {NAV_LINKS.map((link) => (
-            <a key={link.href} href={link.href} className="text-sm font-semibold text-ink/70 hover:text-brand-deep">
+            <a
+              key={link.href}
+              href={link.href}
+              className="text-sm font-semibold text-ink/70 hover:text-brand-deep"
+            >
               {link.label}
             </a>
           ))}
-          <a href={SIGN_IN_URL} className="text-sm font-semibold text-ink/70 hover:text-brand-deep">
+          <a
+            href={SIGN_IN_URL}
+            className="text-sm font-semibold text-ink/70 hover:text-brand-deep"
+          >
             Sign in
           </a>
         </nav>
 
-        <p className="text-sm text-ink/50">© {new Date().getFullYear()} Fuel Flow. All rights reserved.</p>
+        <p className="text-sm text-ink/50">
+          © {new Date().getFullYear()} Fuel Flow. All rights reserved.
+        </p>
       </div>
     </footer>
   );

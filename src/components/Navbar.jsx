@@ -24,7 +24,9 @@ export default function Navbar() {
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
         <a href="#top" className="flex items-center gap-2" onClick={closeMenu}>
           <img src="/logo.png" alt="" className="h-9 w-9" />
-          <span className="text-xl font-extrabold text-brand-deep">Fuel Flow</span>
+          <span className="text-xl font-extrabold text-brand-deep">
+            Fuel Flow
+          </span>
         </a>
 
         <div className="hidden items-center gap-8 md:flex">

@@ -6,13 +6,15 @@ export default function Roles() {
     <section id="roles" className="bg-white py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-5">
         <div className="mx-auto max-w-2xl text-center">
-          <p className="text-sm font-bold uppercase tracking-wider text-brand-dark">Roles</p>
+          <p className="text-sm font-bold uppercase tracking-wider text-brand-dark">
+            Roles
+          </p>
           <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-ink md:text-4xl">
             Each team sees what it needs
           </h2>
           <p className="mt-4 text-lg text-ink/65">
-            Access is set by role, so station staff, outdoor sales and head office each work with
-            the records that matter to them.
+            Access is set by role, so station staff, outdoor sales and head
+            office each work with the records that matter to them.
           </p>
         </div>
 
@@ -29,7 +31,9 @@ export default function Roles() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-ink">{role.title}</h3>
-                  <p className="mt-2 leading-relaxed text-ink/65">{role.text}</p>
+                  <p className="mt-2 leading-relaxed text-ink/65">
+                    {role.text}
+                  </p>
                 </div>
               </div>
             );
