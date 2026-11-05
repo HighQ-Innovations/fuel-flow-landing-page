@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" role="img" aria-labelledby="t2">
+  <title id="t2">Spreadsheet export with bordered cells, grey header and totals row</title>
+  <defs>
+    <filter id="s2" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#304e02" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+  <rect width="600" height="420" rx="28" fill="#f2ffdc"/>
+  <rect x="60" y="54" width="480" height="300" rx="14" fill="#ffffff" filter="url(#s2)"/>
+
+  <!-- Header row -->
+  <rect x="84" y="90" width="432" height="34" fill="#d9d9d9" stroke="#1f2a12" stroke-width="1.5"/>
+  <g stroke="#1f2a12" stroke-width="1.5">
+    <line x1="150" y1="90" x2="150" y2="124"/>
+    <line x1="216" y1="90" x2="216" y2="124"/>
+    <line x1="282" y1="90" x2="282" y2="124"/>
+    <line x1="348" y1="90" x2="348" y2="124"/>
+    <line x1="414" y1="90" x2="414" y2="124"/>
+    <line x1="480" y1="90" x2="480" y2="124"/>
+  </g>
+  <g font-family="Figtree, Arial, sans-serif" font-size="11" font-weight="700" fill="#1f2a12">
+    <text x="98" y="112">Date</text>
+    <text x="164" y="112">Product</text>
+    <text x="230" y="112">Opening</text>
+    <text x="296" y="112">Received</text>
+    <text x="362" y="112">Closing</text>
+    <text x="428" y="112">Tank</text>
+    <text x="494" y="112">Pump</text>
+  </g>
+
+  <!-- Data rows (date merged across two products) -->
+  <g stroke="#1f2a12" stroke-width="1">
+    <rect x="84" y="124" width="432" height="34" fill="#ffffff"/>
+    <rect x="84" y="158" width="432" height="34" fill="#ffffff"/>
+    <rect x="84" y="192" width="432" height="34" fill="#f1f5f9"/>
+    <line x1="84" y1="124" x2="516" y2="124"/>
+    <line x1="84" y1="158" x2="516" y2="158"/>
+    <line x1="84" y1="192" x2="516" y2="192"/>
+    <line x1="84" y1="226" x2="516" y2="226"/>
+    <line x1="150" y1="124" x2="150" y2="226"/>
+    <line x1="216" y1="124" x2="216" y2="226"/>
+    <line x1="282" y1="124" x2="282" y2="226"/>
+    <line x1="348" y1="124" x2="348" y2="226"/>
+    <line x1="414" y1="124" x2="414" y2="226"/>
+    <line x1="480" y1="124" x2="480" y2="226"/>
+    <line x1="84" y1="90" x2="84" y2="226"/>
+    <line x1="516" y1="90" x2="516" y2="226"/>
+  </g>
+  <g font-family="Figtree, Arial, sans-serif" font-size="11" fill="#1f2a12">
+    <text x="98" y="146">01/10</text>
+    <text x="164" y="146">AGO</text>
+    <text x="230" y="146">100</text>
+    <text x="296" y="146">50</text>
+    <text x="362" y="146">40</text>
+    <text x="428" y="146">110</text>
+    <text x="494" y="146">108</text>
+    <text x="164" y="180">PMS</text>
+    <text x="230" y="180">200</text>
+    <text x="296" y="180">30</text>
+    <text x="362" y="180">150</text>
+    <text x="428" y="180">50</text>
+    <text x="494" y="180">52</text>
+    <text x="98" y="214" font-weight="700">Total</text>
+    <text x="230" y="214" font-weight="700">300</text>
+    <text x="296" y="214" font-weight="700">80</text>
+    <text x="362" y="214" font-weight="700">190</text>
+    <text x="428" y="214" font-weight="700">160</text>
+    <text x="494" y="214" font-weight="700">160</text>
+  </g>
+
+  <!-- Callout: merged account cells -->
+  <rect x="84" y="284" width="210" height="44" rx="10" fill="#fff1e3" stroke="#e67203" stroke-width="1.5"/>
+  <text x="96" y="302" font-family="Figtree, Arial, sans-serif" font-size="11" font-weight="700" fill="#a24f00">Merged per day</text>
+  <text x="96" y="318" font-family="Figtree, Arial, sans-serif" font-size="11" fill="#1f2a12">Grand total to transfer</text>
+
+  <!-- Export button -->
+  <rect x="318" y="284" width="198" height="44" rx="12" fill="#80c40b"/>
+  <path d="M348 306 L362 306 M355 299 L355 313 M350 309 L355 314 L360 309" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="372" y="312" font-family="Figtree, Arial, sans-serif" font-size="14" font-weight="700" fill="#ffffff">Export to Excel</text>
+</svg>

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-labelledby="t1">
+  <title id="t1">Fuel Flow daily summary dashboard with a fuel pump</title>
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#304e02" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <rect width="640" height="480" rx="32" fill="#f2ffdc"/>
+  <circle cx="560" cy="60" r="90" fill="#d9f7a6" opacity="0.7"/>
+  <circle cx="60" cy="440" r="70" fill="#d9f7a6" opacity="0.7"/>
+
+  <!-- Dashboard card -->
+  <rect x="150" y="60" width="440" height="330" rx="22" fill="#ffffff" filter="url(#shadow)"/>
+  <rect x="150" y="60" width="440" height="56" rx="22" fill="#80c40b"/>
+  <rect x="150" y="90" width="440" height="26" fill="#80c40b"/>
+  <text x="176" y="95" font-family="Figtree, Arial, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Daily summary</text>
+  <rect x="478" y="77" width="96" height="24" rx="12" fill="#ffffff" opacity="0.25"/>
+  <text x="526" y="94" text-anchor="middle" font-family="Figtree, Arial, sans-serif" font-size="12" font-weight="600" fill="#ffffff">Oct 2026</text>
+
+  <!-- KPI tiles -->
+  <rect x="172" y="136" width="124" height="70" rx="14" fill="#f2ffdc"/>
+  <text x="186" y="160" font-family="Figtree, Arial, sans-serif" font-size="12" fill="#497303">Tank sale</text>
+  <text x="186" y="189" font-family="Figtree, Arial, sans-serif" font-size="20" font-weight="800" fill="#1f2a12">1,240 L</text>
+
+  <rect x="308" y="136" width="124" height="70" rx="14" fill="#fff1e3"/>
+  <text x="322" y="160" font-family="Figtree, Arial, sans-serif" font-size="12" fill="#a24f00">Expenses</text>
+  <text x="322" y="189" font-family="Figtree, Arial, sans-serif" font-size="20" font-weight="800" fill="#1f2a12">₦ 18,500</text>
+
+  <rect x="444" y="136" width="124" height="70" rx="14" fill="#f2ffdc"/>
+  <text x="458" y="160" font-family="Figtree, Arial, sans-serif" font-size="12" fill="#497303">Grand total</text>
+  <text x="458" y="189" font-family="Figtree, Arial, sans-serif" font-size="20" font-weight="800" fill="#1f2a12">₦ 2.4M</text>
+
+  <!-- Bar chart: litres by day -->
+  <text x="172" y="236" font-family="Figtree, Arial, sans-serif" font-size="13" font-weight="700" fill="#1f2a12">Litres sold this week</text>
+  <line x1="172" y1="362" x2="562" y2="362" stroke="#d1d5db" stroke-width="1.5"/>
+  <rect x="190" y="290" width="36" height="72" rx="6" fill="#80c40b"/>
+  <rect x="244" y="262" width="36" height="100" rx="6" fill="#80c40b"/>
+  <rect x="298" y="304" width="36" height="58" rx="6" fill="#80c40b"/>
+  <rect x="352" y="250" width="36" height="112" rx="6" fill="#e67203"/>
+  <rect x="406" y="276" width="36" height="86" rx="6" fill="#80c40b"/>
+  <rect x="460" y="296" width="36" height="66" rx="6" fill="#80c40b"/>
+  <rect x="514" y="268" width="36" height="94" rx="6" fill="#80c40b"/>
+
+  <!-- Gas pump -->
+  <rect x="58" y="210" width="110" height="200" rx="14" fill="#304e02"/>
+  <rect x="74" y="226" width="78" height="52" rx="8" fill="#f2ffdc"/>
+  <text x="113" y="257" text-anchor="middle" font-family="Figtree, Arial, sans-serif" font-size="18" font-weight="800" fill="#304e02">25.4 L</text>
+  <rect x="78" y="296" width="70" height="14" rx="7" fill="#80c40b"/>
+  <rect x="78" y="320" width="70" height="14" rx="7" fill="#e67203"/>
+  <rect x="78" y="344" width="70" height="14" rx="7" fill="#80c40b"/>
+  <rect x="44" y="404" width="138" height="16" rx="8" fill="#497303"/>
+  <!-- Hose -->
+  <path d="M168 300 C 200 300, 180 360, 210 372" fill="none" stroke="#1f2a12" stroke-width="8" stroke-linecap="round"/>
+  <rect x="200" y="362" width="26" height="18" rx="6" fill="#e67203"/>
+
+  <!-- Flame accent -->
+  <path d="M520 430 C 500 410, 528 396, 520 370 C 546 392, 552 410, 540 430 Z" fill="#ff6600" opacity="0.9"/>
+  <path d="M520 430 C 506 418, 524 410, 520 398 C 534 412, 536 422, 528 430 Z" fill="#ffb13b"/>
+</svg>
