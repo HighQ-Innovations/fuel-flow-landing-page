@@ -2,17 +2,27 @@
 
 @theme {
   --font-sans: "Figtree", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
 
-  --color-brand-50: #f2ffdc;
-  --color-brand-100: #d9f7a6;
-  --color-brand: #80c40b;
-  --color-brand-dark: #649a06;
-  --color-brand-deep: #304e02;
-  --color-flame: #e67203;
-  --color-flame-bright: #ff6600;
-  --color-ink: #1f2a12;
+  --color-forest: #163f32;
+  --color-forest-deep: #0f2c21;
+  --color-forest-soft: #1f5442;
+  --color-ink: #163a2e;
+  --color-body: #52665d;
+  --color-muted: #687971;
+  --color-sage: #eff5ee;
+  --color-sage-line: #dce5dc;
+  --color-mist: #f8faf6;
+  --color-lime: #b6da7f;
+  --color-flame: #e8781e;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
