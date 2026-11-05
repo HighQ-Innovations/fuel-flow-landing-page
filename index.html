@@ -1,20 +1,104 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-NG">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Fuel Flow: Daily Records Software for Filling Stations</title>
     <meta
       name="description"
-      content="Fuel Flow helps filling stations record tanks, pumps and daily accounts, then export clean summaries to Excel."
+      content="Fuel Flow helps filling stations in Nigeria record tank levels, pump meter readings and daily accounts, then export clear Excel summaries. Request a demo."
     />
+    <meta name="author" content="Fuel Flow" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#163f32" />
+    <link rel="canonical" href="%VITE_SITE_URL%/" />
+    <link rel="alternate" hreflang="en-NG" href="%VITE_SITE_URL%/" />
+    <link rel="alternate" hreflang="x-default" href="%VITE_SITE_URL%/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Fuel Flow" />
+    <meta property="og:locale" content="en_NG" />
+    <meta property="og:url" content="%VITE_SITE_URL%/" />
+    <meta property="og:title" content="Fuel Flow: Daily Records Software for Filling Stations" />
+    <meta
+      property="og:description"
+      content="Track tanks, pump readings and daily accounts in one place, and export clear Excel summaries for your finance team."
+    />
+    <meta property="og:image" content="%VITE_SITE_URL%/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Fuel Flow logo with the words daily records for filling stations" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Fuel Flow: Daily Records Software for Filling Stations" />
+    <meta
+      name="twitter:description"
+      content="Track tanks, pump readings and daily accounts in one place, and export clear Excel summaries."
+    />
+    <meta name="twitter:image" content="%VITE_SITE_URL%/og-image.png" />
+
+    <!-- Uncomment and paste your token from Meta Business Settings > Brand Safety > Domains -->
+    <!-- <meta name="facebook-domain-verification" content="YOUR_TOKEN" /> -->
+
     <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/logo.png" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <title>Fuel Flow | Daily records for filling stations</title>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "%VITE_SITE_URL%/#organization",
+            "name": "Fuel Flow",
+            "url": "%VITE_SITE_URL%/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "%VITE_SITE_URL%/logo.png",
+              "width": 512,
+              "height": 512
+            },
+            "email": "%VITE_CONTACT_EMAIL%",
+            "areaServed": { "@type": "Country", "name": "Nigeria" }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "%VITE_SITE_URL%/#website",
+            "url": "%VITE_SITE_URL%/",
+            "name": "Fuel Flow",
+            "inLanguage": "en-NG",
+            "publisher": { "@id": "%VITE_SITE_URL%/#organization" }
+          },
+          {
+            "@type": "SoftwareApplication",
+            "name": "Fuel Flow",
+            "applicationCategory": "BusinessApplication",
+            "applicationSubCategory": "Filling station management",
+            "operatingSystem": "Any modern web browser",
+            "description": "Daily records app for filling stations: tank records, pump meter readings, daily accounts, outdoor and van sales, and Excel summary exports.",
+            "url": "%VITE_SITE_URL%/",
+            "image": "%VITE_SITE_URL%/og-image.png",
+            "provider": { "@id": "%VITE_SITE_URL%/#organization" },
+            "featureList": [
+              "Daily tank records",
+              "Pump meter readings with PDF export",
+              "Daily accounts with POS, cash, transfers, expenses and IOUs",
+              "Summary filtered by date range with Excel export",
+              "Outdoor and van sales tracking",
+              "Role-based access for administrators, station staff, outdoor sales and HR and finance"
+            ]
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
