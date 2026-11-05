@@ -98,7 +98,7 @@ export const ROLES = [
   },
   {
     icon: Fuel,
-    title: "Station staff",
+    title: "Station Manager",
     text: "Enter tank levels, pump readings and daily accounts as the day unfolds.",
     label: "Capture the working day",
   },
@@ -130,8 +130,8 @@ export const STEPS = [
     text: "Bring sales, collections and expenses together.",
   },
   {
-    title: "Review & export",
-    text: "Check the summary and export your daily records.",
+    title: "Review",
+    text: "Check the summary of your daily records.",
   },
 ];
 

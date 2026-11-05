@@ -5,8 +5,18 @@ export default function Footer() {
     <footer className="border-t border-sage-line bg-white">
       <div className="mx-auto max-w-6xl px-5 py-10">
         <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
-          <a href="/" className="flex items-center gap-2" aria-label="Fuel Flow home">
-            <img src="/logo.png" alt="" width="28" height="28" className="h-7 w-7" />
+          <a
+            href="/"
+            className="flex items-center gap-2"
+            aria-label="Fuel Flow home"
+          >
+            <img
+              src="/logo.png"
+              alt=""
+              width="28"
+              height="28"
+              className="h-7 w-7"
+            />
             <span className="font-extrabold text-forest">Fuel Flow</span>
           </a>
           <nav aria-label="Footer">
@@ -18,11 +28,6 @@ export default function Footer() {
                   </a>
                 </li>
               ))}
-              <li>
-                <a href={SIGN_IN_URL} className="hover:text-forest">
-                  Sign in
-                </a>
-              </li>
             </ul>
           </nav>
         </div>
